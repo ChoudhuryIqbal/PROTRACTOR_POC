@@ -1,0 +1,32 @@
+identify --- use locator 
+element 
+and element.all   to find the elements
+ng-model
+elemetn(by.model("model name'));
+
+
+binding
+element(by.binding("name--- partial will workd" ));
+
+
+exactbingding(by.exactBinding (---")
+
+
+elemetn(by.buttonText("save"))---- partial will work
+
+
+ng repeater
+
+let eleID=element(by.repeater("repeater name')).row(0);
+
+let elename=element(by.repeater('prodcut info')).row(1);
+exactRepeater
+
+
+cssContainingText(".name',"Mike")
+
+ng options
+
+let allOptions=element.all(by.options('options in the list'))
+
+expect(allOptions.count()).toEqual(3);
