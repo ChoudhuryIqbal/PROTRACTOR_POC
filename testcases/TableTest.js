@@ -42,4 +42,16 @@ describe("Table Demo", function () {
     ).toBe(returnable);
     browser.sleep(6000);
   });
+
+  it("Navigate to The product List", function () {
+    element(by.id("list-menu")).click();
+    expect(element(by.tagName("h3")).getText()).toBe("Product List");
+    browser.sleep(2000);
+  });
+
+  it("Delete product", function () {
+    browser.sleep(3000);
+    element.all(by.tagName("tr")).get(1).element(by.id("delete")).click();
+    browser.sleep(3000);
+  });
 });
